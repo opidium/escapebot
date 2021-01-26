@@ -41,14 +41,14 @@ jobs:
               deploy:
                   steps:
                       - script: |
-                            cd ~/azagent/_work/4/drop
+                            cd ~/azagent/_work/1/drop
                             rm -rf *
                       - download: current
                         artifact: drop
                       - script: |
                             cd ~/escapebot
                             rm -rf dist
-                            cd ~/azagent/_work/4/drop
+                            cd ~/azagent/_work/1/drop
                             unzip *.zip
                             mv dist ~/escapebot
                             pm2 start dist/index.js --name escapebot_az
