@@ -48,7 +48,6 @@ jobs:
                       - script: |
                             cd ~/escapebot
                             rm -rf dist
-							npm i
                             cd ~/azagent/_work/1/drop
                             unzip *.zip
                             mv dist ~/escapebot
