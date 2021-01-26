@@ -48,7 +48,8 @@ jobs:
                       - script: |
                             cd ~/escapebot
                             rm -rf dist
+							npm i
                             cd ~/azagent/_work/1/drop
                             unzip *.zip
                             mv dist ~/escapebot
-                            pm2 start dist/index.js --name escape_bot_az
+                            pm2 restart escape_bot_az
