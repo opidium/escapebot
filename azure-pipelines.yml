@@ -51,4 +51,4 @@ jobs:
                             cd ~/azagent/_work/1/drop
                             unzip *.zip
                             mv dist ~/escapebot
-                            pm2 start dist/index.js --name escapebot_az
+                            pm2 start dist/index.js --name escape_bot_az
