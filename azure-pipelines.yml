@@ -50,5 +50,5 @@ jobs:
                             rm -rf dist
                             cd ~/azagent/_work/1/drop
                             unzip *.zip
-                            mv dist ~/escapebot
+                            sudo mv dist ~/escapebot
                             pm2 restart escape_bot_az
